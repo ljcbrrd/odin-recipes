@@ -1,0 +1,75 @@
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif}
+
+.hero {
+    background-image: url("../odin-recipes/images/CalcuttaVicenzaQuartz2x1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    border: 1px solid yellow;
+    
+/*
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;*/
+}
+
+nav{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 0px 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+nav .logo{
+    width: 200px;
+}
+
+.icon {
+    position: relative;
+    border: 4px solid white;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border: 8px solid rgb(99, 91, 72); 
+}
+
+.food-items {
+    position: relative;
+    top: 100px;
+    padding: 10% 10%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    color: chartreuse;
+}
+.overlay {
+    position: relative; 
+    top: 0; 
+    color: rgb(99, 91, 72); 
+    width: 300px;
+    transition: .5s ease;
+    opacity:0;
+    font-size: 30px;
+    padding: 1px;
+    text-align: center;
+  }
+  .recipe:hover .overlay {
+    opacity: 1;
+  }
+  .recipe2:hover .overlay {
+    opacity: 1;
+  }
